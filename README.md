@@ -1,5 +1,7 @@
 # tech-assessment
 
+For this to work I have install a chrome extention for the CORs issue, If not I would need a backend server to handle the CORs issue.
+
 ### Challenge:
 We would like you to build a React *frontend* of a small webapp. This is a React assessment so please do your best to demonstrate your master of React framework.
 
