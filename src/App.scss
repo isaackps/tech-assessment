@@ -3,7 +3,9 @@
 
 // Import Routes Styles
 @import './routes/HomePage/style.scss';
+@import './routes/DetailsPage/style.scss';
 
 // Import Components Styles
 @import './components/AppLayout/style.scss';
 @import './components/MovieTiles/style.scss';
+@import './components/MovieDetails/style.scss';

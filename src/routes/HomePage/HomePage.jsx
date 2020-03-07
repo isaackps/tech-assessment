@@ -16,7 +16,6 @@ class HomePage extends PureComponent {
     this.setState({
       movieList: getMovie
     });
-    console.log(this.state.movieList);
   }
 
   render() {
@@ -30,10 +29,7 @@ class HomePage extends PureComponent {
             >
               <MovieTiles 
                 title={ movie.name } 
-                year={ movie.productionYear }
-                genre={ movie.genre }
                 synopsisShort={ movie.synopsisShort }
-                synopsis={ movie.synopsis }
                 image={ movie.image }
                 key={ i }
               />
