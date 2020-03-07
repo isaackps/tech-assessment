@@ -2,6 +2,7 @@ import React, { PureComponent } from 'react';
 import { Link } from 'react-router-dom';
 import movieApi from '../../api/movieApi';
 import MovieDetails from '../../components/MovieDetails/MovieDetails';
+import { replaceSpace } from '../../utilities/utilities';
 
 class DetailsPage extends PureComponent {
   constructor(props) {
@@ -12,12 +13,8 @@ class DetailsPage extends PureComponent {
     };
   }
 
-  replaceSpace(word) {
-    return word.replace(/%20/g, ' ');
-  }
-
   async componentDidMount() {
-    const movieId = this.replaceSpace(location.pathname.replace('/details/', ''));
+    const movieId = replaceSpace(location.pathname.replace('/details/', ''));
     this.setState({
       movieId
     });
