@@ -19,6 +19,7 @@ npm i
 npm run start
 ```
 * Upon loaded, a webpage will appear and you will be able to use the webapp. 
+* Please give it sometime to load the content as it may take some time to get a response from the API.
 * Note, Sometimes there is a network error and the page will fail to load, you just need to refresh the page and everything should be ok.
 
 
