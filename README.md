@@ -1,6 +1,26 @@
 # tech-assessment
 
-For this to work I have install a chrome extention for the CORs issue, If not I would need a backend server to handle the CORs issue.
+### Run this webapp locally:
+* please use chrome browser only
+* Because of a CORs issue, we will need to install Moesif Orign & CORS Changer extension on the chrome.
+```
+https://chrome.google.com/webstore/detail/moesif-orign-cors-changer/digfbfaphojjndkpccljibejjbppifbc
+```
+* git clone the repo
+```
+https://github.com/isaackps/tech-assessment
+```
+* install node packages
+```
+npm i
+```
+* Run the project
+```
+npm run start
+```
+* Upon loaded, a webpage will appear and you will be able to use the webapp. 
+* Note, Sometimes there is a network error and the page will fail to load, you just need to refresh the page and everything should be ok.
+
 
 ### Challenge:
 We would like you to build a React *frontend* of a small webapp. This is a React assessment so please do your best to demonstrate your master of React framework.
