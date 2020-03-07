@@ -22,7 +22,7 @@ npm run start
 * Please give it sometime to load the content as it may take some time to get a response from the API.
 * Note, Sometimes there is a network error and the page will fail to load, you just need to refresh the page and everything should be ok.
 
-======
+---
 
 ### Challenge:
 We would like you to build a React *frontend* of a small webapp. This is a React assessment so please do your best to demonstrate your master of React framework.
