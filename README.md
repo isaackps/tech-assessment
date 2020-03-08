@@ -6,6 +6,7 @@
 ```
 https://chrome.google.com/webstore/detail/moesif-orign-cors-changer/digfbfaphojjndkpccljibejjbppifbc
 ```
+* make sure to turn on the chrome extension
 * git clone the repo
 ```
 https://github.com/isaackps/tech-assessment
