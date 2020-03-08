@@ -1,13 +1,11 @@
-import React, { PureComponent } from 'react';
+import React from 'react';
 
-class AppLayout extends PureComponent {
-  render() {
-    return (
-      <div className="AppLayoutContainer">
-        <div className="content">{ this.props.children }</div>
-      </div>
-    );
-  }
-}
+const AppLayout = props => {
+  return (
+    <div className="AppLayoutContainer">
+      <div className="content">{ props.children }</div>
+    </div>
+  );
+};
 
 export default AppLayout;

@@ -42,4 +42,46 @@ describe('#filterMovieList', () => {
     expect(filterMovieList(movieList, 'genre', 'Action')).toEqual(expected);
 
   });
+
+  it('Should return the entire movie list if value is "all"', () => {
+    const movieList = [
+      {
+        name: 'Deadpool',
+        productionYear: 2016,
+        genre: 'Action',
+        synopsisShort: 'A wisecracking mercenary',
+        synopsis: 'Wade Wilson is a dishonorably discharged special forces operative working',
+        image: 'movie1.jpg'
+      },
+      {
+        name: 'Barnyard',
+        productionYear: 2006,
+        genre: 'Animation',
+        synopsisShort: 'When the farmer',
+        synopsis: 'Otis (Kevin James) is a carefree young cow who prefers playing with his ',
+        image: 'movie2.jpg'
+      }
+    ];
+    const expected = [
+      {
+        name: 'Deadpool',
+        productionYear: 2016,
+        genre: 'Action',
+        synopsisShort: 'A wisecracking mercenary',
+        synopsis: 'Wade Wilson is a dishonorably discharged special forces operative working',
+        image: 'movie1.jpg'
+      },
+      {
+        name: 'Barnyard',
+        productionYear: 2006,
+        genre: 'Animation',
+        synopsisShort: 'When the farmer',
+        synopsis: 'Otis (Kevin James) is a carefree young cow who prefers playing with his ',
+        image: 'movie2.jpg'
+      }
+    ];
+
+    expect(filterMovieList(movieList, 'year', 'all')).toEqual(expected);
+    expect(filterMovieList(movieList, 'genre', 'all')).toEqual(expected);
+  });
 });

@@ -4,9 +4,13 @@ export const replaceSpace = word => {
 
 export const filterMovieList = (movieList, filterType, value) => {
   if (filterType === 'year') {
-    return movieList.filter(item => item.productionYear === parseInt(value));
+    return value === 'all'
+      ? movieList
+      : movieList.filter(item => item.productionYear === parseInt(value));
   } else if (filterType === 'genre') {
-    return movieList.filter(item => item.genre === value);
+    return value === 'all'
+      ? movieList
+      : movieList.filter(item => item.genre === value);
   }
   return [];
 };
