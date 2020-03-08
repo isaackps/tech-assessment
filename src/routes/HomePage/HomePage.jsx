@@ -50,7 +50,7 @@ class HomePage extends PureComponent {
 
   render() {
     const { filteredList, loading } = this.state;
-    const renderedMovies = 
+    const renderMovies = 
       filteredList && filteredList.length === 0 ? (
         <h2>No Movies found</h2>
       ) : (
@@ -65,10 +65,11 @@ class HomePage extends PureComponent {
           </Link>
         ))
       );
+
     const loadingMovies = loading ? (
       <h2>Loading Movies ....</h2>
     ) : (
-      renderedMovies
+      renderMovies
     );
 
     return (

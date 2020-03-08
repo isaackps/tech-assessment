@@ -6,6 +6,7 @@ const getMovies = async() => {
     return res.body;
   } catch (e) {
     console.log(e);
+    return [];
   }
 };
 
